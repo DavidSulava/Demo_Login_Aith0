@@ -1,0 +1,118 @@
+@import "~bootstrap/scss/bootstrap";
+
+$navbar-height: 80px;
+$font-family-standart: 'Gilroy';
+
+.nav-bar{
+  width: 100%;
+  height: $navbar-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+
+  .nav-bar-component-wrapper{
+    height: 60%;
+    margin-inline: 8px;
+  }
+}
+.page-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F8FA;
+  height: calc(100vh - #{$navbar-height});
+}
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 684px;
+  max-height: 684px;
+  width: 85%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 33px;
+  font-family: $font-family-standart;
+
+  .filter-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+    flex-grow: 1;
+
+    .search-filter-wrapper{
+      width: 281px;
+      height: 42px;
+
+      .has-search{
+        position: absolute;
+        height: 42px;
+        width: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+       input {
+        background-color: #e9ecef;
+        height: inherit;
+        border-radius: 10px;
+        padding-left: 35px;
+       }
+    }
+    .form-select{
+      width: 281px;
+      height: 42px;
+      border-radius: 10px;
+    }
+    .form-control::placeholder, .form-select, .icon-search{
+      color: #A1A5B6;
+    }
+  }
+  .table-wrapper{
+    display: flex;
+    flex-grow: 10;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+
+    .table-page{
+      height: 100%;
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .table{
+      margin-bottom: 0;
+    }
+    td, tr, th, thead, tbody{
+      border-color: #B5B5C3;
+      border-style: dashed;
+    }
+    .table-header th{
+      color: #B5B5C3;
+    }
+    .column-gray{
+      color: #7E8298;
+    }
+  }
+  .page-footer{
+    height: 98px;
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .pagination{
+    margin: 0;
+
+    .page-link {
+      border: none;
+      border-radius: 5px;
+    }
+    .page-item.active .page-link{
+      background-color: #6610f2;;
+    }
+  }
+}
