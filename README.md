@@ -1,4 +1,4 @@
-# Descriptio
+# Description
 
 Демка приложения с использованием Auth0
 
