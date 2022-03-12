@@ -2,6 +2,7 @@
   "name": "api-table-login",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://davidsulava.github.io/Demo_Login_Aith0",
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
@@ -11,6 +12,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.0",
     "react-dom": "^17.0.2",
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
